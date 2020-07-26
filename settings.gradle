@@ -1,0 +1,9 @@
+rootProject.name = 'multimodule'
+include 'module:core'
+findProject(':module:core')?.name = 'core'
+include 'module:fuser'
+findProject(':module:fuser')?.name = 'fuser'
+include 'module:fadmin'
+findProject(':module:fadmin')?.name = 'fadmin'
+
+
